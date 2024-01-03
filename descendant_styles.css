@@ -1,13 +1,13 @@
+p{ 
+    font-size: 20px;
+    color: blue;
+    font-family:'Times New Roman', Times, serif;
+    background-color: lime;
+}
 .container p{
     background-color: yellow;
     color: red;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 90px;
-}
-p{ 
-    font-size: 20px;
-    color: blue;
-    font-family:'Times New Roman', Times, serif;
-    background-color: lime;
 }
