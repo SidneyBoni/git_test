@@ -1,7 +1,7 @@
 body,
 html {
   height: 100%;
-  margin: 0;
+  margin: 0%;
 }
 
 .container {
@@ -10,14 +10,15 @@ html {
   padding: 16px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 20% 60%;
+  grid-template-columns: 30% repeat(1, 1fr);
   grid-template-rows: 20% 20% 100% 20%;
   grid-gap: 15px;
+  
 }
 
 .container div {
   padding: 15px;
-  font-size: 32px;
+  font-size: 200%;
   font-family: Helvetica;
   font-weight: bold;
   color: white;
