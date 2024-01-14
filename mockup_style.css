@@ -1,6 +1,8 @@
 body,
 html {
-  height: 100%;
+  position: relative;
+  height: relative;
+  width: relative;
   margin: 0%;
 }
 
@@ -10,7 +12,7 @@ html {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 11% 90% 20%;
+  grid-template-rows: 20% 11% 119% 20%;
   grid-gap: 15px;
   gap: 4px;
 }
@@ -48,12 +50,12 @@ html {
 .sidebar {
   background-color: #ff0000;
   display: grid;
-  gap: 50px;
+  gap: 4%;
   grid-row: 2/4;
   display: grid;
-  grid-template-rows: 200px;
+  grid-template-rows: 20%;
   grid-template-columns: auto;
-  justify-items: center;
+  text-align: center;
   vertical-align: middle;
 }
 .sidebar .photo{
@@ -62,16 +64,13 @@ html {
   color: black;
   background-color: white;
   border-radius: 5%;
-  padding: 20%;
   }
 .sidebar .side-content{
   box-sizing: border-box;
   width: 100%;
   background-color: white;
   color: black;
-  text-align: center;
-  vertical-align: middle;
-  padding: 25%;
+
 }
 
 .nav {
@@ -80,18 +79,15 @@ html {
   display: grid;
   justify-items: stretch;
   vertical-align: middle;
-  text-transform:uppercase;
+  text-transform: uppercase;
   margin: 0;
-}
-.nav li:hover{
-  background-color: #ff6000;
 }
 .nav li{
     font-size: 20px;
     margin: 0;
     display: inline-block;
     padding-inline: 9%;
-    vertical-align: middle;
+    vertical-align: auto;
 }
 .nav ul{
   grid-template-columns: 3 30%;
@@ -105,20 +101,35 @@ html {
 
 
 .article {
-  background-color: #7E1DC3;
-  display: grid;
-  grid-template-columns: repeat(20% 1fr);
+  background-color: grey;
   grid-column: 2;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  gap: 1%;
 }
-.article .ul{
-    display: grid;    
-    display: inline-block;
+.article .title{
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.article .card{
+    box-sizing: content-box;
+    background-color: whitesmoke;
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.article .card p{
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   background-color: #393f4d;
   grid-column: 1/3;
+  height: 2.5rem;
 }
 
 .article p {
