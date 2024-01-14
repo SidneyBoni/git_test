@@ -10,7 +10,7 @@ html {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 20% 100% 20%;
+  grid-template-rows: 20% 11% 90% 20%;
   grid-gap: 15px;
   gap: 4px;
 }
@@ -29,7 +29,6 @@ html {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-column: 1/4;
-  justify-items: start;
   justify-items: stretch;
   vertical-align: middle;
   }
@@ -40,9 +39,9 @@ html {
   }
 .header li{
     font-size: 20px;
-    margin: auto;
+    margin: 0;
     display: inline-block;
-    padding-inline: 4%;
+    padding-inline: 6%;
     vertical-align: middle;
 }
 
@@ -51,12 +50,56 @@ html {
   display: grid;
   gap: 50px;
   grid-row: 2/4;
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: auto;
+  justify-items: center;
+  vertical-align: middle;
+}
+.sidebar .photo{
+  box-sizing: border-box;
+  width: 100%;
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  padding: 20%;
+  }
+.sidebar .side-content{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25%;
 }
 
 .nav {
-  background-color: #642cde;
+  background-color: #ff0000;
   grid-column: 2;
+  display: grid;
+  justify-items: stretch;
+  vertical-align: middle;
+  text-transform:uppercase;
+  margin: 0;
 }
+.nav li{
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+    padding-inline: 9%;
+    vertical-align: middle;
+}
+.nav ul{
+  grid-template-columns: 3 30%;
+  list-style-type: none;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 .article {
   background-color: #7E1DC3;
