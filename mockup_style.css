@@ -48,15 +48,13 @@ html {
 }
 
 .sidebar {
+  position:relative;
   background-color: #ff0000;
-  display: grid;
   gap: 4%;
   grid-row: 2/4;
   display: grid;
   grid-template-rows: 200px;
   grid-template-columns: auto;
-  justify-items: center;
-  vertical-align: middle;
 }
 .sidebar .photo{
   box-sizing: border-box;
@@ -64,16 +62,15 @@ html {
   color: black;
   background-color: white;
   border-radius: 5%;
-  padding: 20%;
+  padding-top: 20%;
   }
 .sidebar .side-content{
+  display: block;
   box-sizing: border-box;
   width: 100%;
-  background-color: white;
   color: black;
-  text-align: center;
-  vertical-align: middle;
-  padding: 25%;
+  background-color: white;
+  padding-top: 40%;
 }
 
 .nav {
