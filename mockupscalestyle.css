@@ -1,0 +1,141 @@
+body,
+html {
+  position: relative;
+  height: relative;
+  width: relative;
+  margin: 0%;
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 11% 119% 20%;
+  grid-gap: 15px;
+  gap: 4px;
+}
+
+.container div {
+  padding: 15px;
+  font-size: auto;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  background-color: #2f4f4f;
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-column: 1/4;
+  justify-items: stretch;
+  vertical-align: middle;
+  }
+  .header .logo{
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+.header li{
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+    padding-inline: 6%;
+    vertical-align: middle;
+}
+
+.sidebar {
+  height: auto;
+  background-color: #ff0000;
+  display: grid;
+  gap: 4%;
+  grid-row: 2/4;
+  display: grid;
+  grid-template-rows: 20%;
+  grid-template-columns: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.sidebar .photo{
+  height: auto;
+  box-sizing: border-box;
+  width: 100%;
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  }
+.sidebar .side-content{
+  height: auto;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.nav {
+  background-color: #ff0000;
+  grid-column: 2;
+  display: grid;
+  justify-items: stretch;
+  vertical-align: middle;
+  text-transform: uppercase;
+  height: fit-content;
+}
+.nav li{
+    font-size: 20px;
+    display: inline-block;
+    padding-inline: 10%;
+    vertical-align: middle;
+}
+.nav ul{
+  grid-template-columns: 3 30%;
+  list-style-type: none;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.article {
+  background-color: grey;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  gap: 1%;
+}
+.article .title{
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.article .card{
+    box-sizing: content-box;
+    background-color: whitesmoke;
+    height: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.article .card p{
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #393f4d;
+  grid-column: 1/3;
+  height: 2.5rem;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
